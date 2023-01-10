@@ -107,13 +107,13 @@ function Form() {
 
             <div className="flex justify-center lg:justify-start items-start flex-col my-6">
                 <label className="font-semibold my-1">Name:<span className="text-[#ee3b3b] text-xl">*</span></label>
-                <input type="text" name="fullname" placeholder="Enter your name" className="w-full outline-none border-none py-4 px-8 bg-ash rounded-lg focus-within:border-2 focus-within:border-darkblue focus-within:border-solid font-normal text-[1rem]" value={formData.fullname} onChange={handleChange}/>
+                <input type="text" name="fullname" placeholder="Enter your name" className="w-full outline-none border-none py-4 px-8 bg-ash rounded-3xl focus-within:border-2 focus-within:border-darkblue focus-within:border-solid font-normal text-[1rem]" value={formData.fullname} onChange={handleChange}/>
                 {errors.fullname && <p className="text-sm my-2 text-[#ee3b3b]">{errors.fullname}</p>}
             </div>
 
             <div className="flex justify-center lg:justify-start items-start flex-col my-6">
                 <label className="font-semibold my-1">Email:<span className="text-[#ee3b3b] text-xl">*</span></label>
-                <input type="email" name="email" placeholder="Enter your email" className="w-full outline-none border-none py-4 px-8 bg-ash rounded-lg focus-within:border-2 focus-within:border-darkblue focus-within:border-solid font-normal text-[1rem]" value={formData.email} onChange={handleChange}/>
+                <input type="email" name="email" placeholder="Enter your email" className="w-full outline-none border-none py-4 px-8 bg-ash rounded-3xl focus-within:border-2 focus-within:border-darkblue focus-within:border-solid font-normal text-[1rem]" value={formData.email} onChange={handleChange}/>
                 {errors.email && <p className="text-sm my-2 text-[#ee3b3b]">{errors.email}</p>}
             </div>
 
@@ -124,7 +124,7 @@ function Form() {
             </div>
 
             <div className="flex justify-center items-center flex-col my-6">
-                <button className="block w-full font-semibold text-lg bg-black text-white outline-none border-none py-4 px-6 rounded-lg hover:bg-siteyellow cursor-pointer hover:text-black" onClick={handleFormSubmit}>Send Message</button>
+                <button className="block w-full font-semibold text-lg bg-black text-white outline-none border-none py-4 px-6 rounded-3xl hover:bg-siteyellow cursor-pointer hover:text-black" onClick={handleFormSubmit}>Send Message</button>
             </div>
         </form>
     )

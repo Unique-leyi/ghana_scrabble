@@ -8,71 +8,42 @@ function SectionAbout() {
     return (
         <section className={`lg:max-w-[90%] lg:mx-auto my-20 lg:p-0 p-4`}>
 
-            <div className="flex lg:justify-around justify-center items-center lg:flex-row flex-col">
+            <div className="grid lg:grid-cols-2 grid-cols-1 justify-between items-center gap-y-14 gap-x-0 lg:gap-x-20 lg:mt-16 mt-6">
 
 
-                 <div className="flex-1 flex justify-center items-center flex-col flex-wrap">
-
-                    <div className="w-[10rem] h-[10rem] lg:w-64 lg:h-64 relative !-mb-8">
-                        <Image className="!border-4 !border-solid !border-sitepurple rounded-full" src={require('../../assets/images/scrabble_2.png')} alt={'scrabble board'} layout="fill" objectFit="cover" width={100} height={100}/>
+                 <div className="p-6 lg:p-10 lg:mx-0 relative bg-siteyellow flex justify-center items-center z-10">
+                    <div className={`w-96 h-96 relative shadow-[rgba(0,0,0,0.5)] shadow-xl rounded-md overflow-hidden z-10 border-4 border-sitered border-solid `}>
+                        <Image className="rounded-md" src={require('../../assets/images/scrabble_1.png')} alt={'scrabble board'} style={{ objectFit: "cover" }} fill/>
                     </div>
 
-
-                    <div className="flex justify-around items-center gap-1">
-                        <div className="w-[10rem] h-[10rem] lg:w-60 lg:h-60 relative ">
-                            <Image className="!border-4 !border-solid !border-sitepurple rounded-full" src={require('../../assets/images/scrabble_1.png')} alt={'scrabble board'} layout="fill" objectFit="cover" width={100} height={100}/>
-                        </div>
-
-
-                        <div className="w-[10rem] h-[10rem] lg:w-60 lg:h-60 relative">
-                            <Image className="!border-4 !border-solid !border-sitepurple rounded-full" src={require('../../assets/images/scrabble_3.png')} alt={'scrabble board'} layout="fill" objectFit="cover" width={100} height={100}/>
-                        </div>
-
+                    <div className="w-80 h-80 absolute bottom-0 left-0 bg-black">
+                        {" "}
                     </div>
 
                     
                 </div>
 
-                 <div className="my-16 lg:mx-8 flex-1">
-                    <h3 className="text-sitepink font-bold text-xl">History of PANASA</h3>
-                    <h5 className="my-2 text-3xl lg:text-4xl font-[800] text-deep">How It All Began</h5>
+                 <div className="lg:mx-8 flex-1">
+                    <h3 className="text-sitered font-bold text-xl">History of SCAG</h3>
+                    <h5 className="my-2 text-3xl lg:text-4xl font-[800] text-black">How It All Began</h5>
                     <div className="page-btn">
-                        <p className="my-2 text-[1rem] text-darkash">PANASA is an international sporting association, a non-governmental, having its own juridical status.</p>
+                        <p className="my-2 text-[1rem] text-darkash text-justify">Scrabble Association of Ghana was established in 1988 and became affiliated with the National Sports Authority same year. It has seen in the basic, through to the second cycle and the tertiary levels of education in Ghana.   
+                        <br />SCAG throughout the years has participated in major international competitions and chalked notable successes.</p>
 
-                        <p className="my-4 text-[1rem] text-darkash"> PANASA, founded in 1994, consists of all African National Scrabble Associations which are also participating countries of the World Scrabble Championships (WSC) and recognized by WSB as the official bodies controlling Scrabble in their respective countries.</p>
-                            
-                        <p>Those in attendance during the formative meeting were:</p>
+                        <p className="my-2 text-[1rem] text-justify"> The most recent success is by placing third in the 2022 African Scrabble Championship (ASC) in Lusaka, Zambia. In 2002, Michael Quao won the Mind Sports Olympiad in Coventry, England.</p>
+                        <p className="my-2 text-[1rem] text-justify"> The ideals of Scrabble prepare individuals for the unknown; grab opportunities when they come and good decision making. This is drawn from the fact that one does not know what combination of tiles will be drawn from the sack. Scrabble prepares individuals to maintain a constant level of focus and apply various acquired knowledge in diverse areas including basic arithmetic.</p>
 
-                        <ul>
-
-                            <li>1. Mr. Francis Wachira (Kenya)</li>
-                            <li>2. Mr. Ricahrd Andabwa (Kenya)</li>
-                            <li>3. Ms. Cecilia Ruto (Kenya)</li>
-                            <li>4. Dr. Michael Gongolo (Kenya)</li>
-                            <li>5. Lt. Col Gold Eburu (Nigeria)</li>
-                            <li>6. Mr. Larry Ojoko	(Nigeria)</li>
-                            <li>7. Mr. Larry Benjamin (South Africa)</li>
-
-                        </ul>
-
-                        <p className="my-2 text-[1rem] text-darkash">
-                            The main objective of the association then was to develop Scrabble play in Africa and organize a biennial Scrabble Championship amongst member countries. The 14th edition of the ASC held in Lusaka, Zambia from the 21st – 24th October 2022. 
-                        </p>
-
-
-                        <p className="text-[1rem] text-darkash">
-                            The idea of a Pan-African Scrabble Championship was the brainchild of the Kenya Amateur Scrabble Association (now Scrabble Kenya), with full support from the Scrabble Association of Nigeria now (Nigeria Scrabble Federation) and other Scrabble bodies in Africa. There were only three countries in attendance at the first PANASA. 
-                        </p>
-                        
-
-
-                        <div className="my-8 sec_btn">
-                            <Link href={'/team'}>Meet the Team</Link>
-                        </div>
-                       
                     </div>
                 </div> 
 
+            </div>
+
+            <div className="py-4">
+                <p className="my-2 text-[1rem] text-justify"> The backbone of any venture is itself a determining factor to its competitiveness. SCAG is privileged to have astute business moguls as its patrons in the persons of Arch. S. M. Quartey (Atelier), Mr. Bennet Kpentey (SYNC Consult), Mr. Gaddy Laryea (MMRS Ogilvy) and Mr. Michael Ofori. The president of the SCAG Mr. Haruna Adamu is himself a security expert and CEO of OJEYZ Security Services. We are confident that with these strong personalities as our backbone, they provide a solid platform for the next level of the game.</p>
+
+                 <div className="my-4 page-btn flex justify-start lg:justify-end items-start lg:items-end flex-col">
+                    <Link href={'#team'}>Meet the Team</Link>
+                </div>   
             </div>
         </section>
     )

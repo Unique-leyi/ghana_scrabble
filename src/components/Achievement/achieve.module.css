@@ -1,0 +1,31 @@
+
+.achieve_bg, .achieve_bg_2 {
+    background-image: url("../../assets/images/scrabble_4.jpg");
+}
+
+.achieve_bg:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.90);
+  z-index: -1;
+}
+
+/* (255,209,0)  */
+.achieve_bg_2:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 209, 0, 0.80);
+  z-index: -1;
+}

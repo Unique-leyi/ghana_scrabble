@@ -1,13 +1,13 @@
 
 function TopNav() {
     return (
-        <section className="bg-lightblack py-1">
+        <section className="hidden lg:block bg-lightblack py-1">
 
             <div className="lg:max-w-[85%] mx-auto lg:grid lg:grid-cols-2 justify-center items-center">
                 <div className="flex justify-start items-center gap-8">
                     <div className='px-4 flex justify-center items-center gap-x-4 border-r-[1px] border-solid border-ash'>
                         <i class="ri-phone-fill text-siteyellow"></i>
-                        <h4 className="text-white">+234 454 789 0435</h4>
+                        <h4 className="text-white">+233 267 771 857</h4>
                     </div> 
                     
                     <div className='p-2 flex justify-center items-center gap-x-4'>

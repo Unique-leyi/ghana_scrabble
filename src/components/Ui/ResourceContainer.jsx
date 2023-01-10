@@ -15,15 +15,10 @@ const [open, setOpen] = useState(1);
 
 // bg-[#0c240c]
     return (
-        <section className={`bg-white p-0`}>
+        <section className={`bg-ash p-0`}>
 
-            <div className="lg:max-w-[70%] lg:mx-auto my-16">
-                <h5 className="font-medium text-center text-lg text-[#000]">Rules and Guides</h5>
-                <h3 className="font-bold text-center text-4xl lg:text-5xl text-darkblue">Our Resources</h3>
-            </div>
-
-            <section className={`bg-ash bg-cover bg-center bg-no-repeat bg-fixed relative z-10`}>
-                <div className={`mt-16 lg:mt-8  lg:mx-auto w-full lg:max-w-[90%]`}>
+            <section className={`bg-cover bg-center bg-no-repeat bg-fixed relative z-10`}>
+                <div className={`lg:mt-0  lg:mx-auto w-full lg:max-w-[85%]`}>
 
                     {
                         Resources.map((item, i) => (

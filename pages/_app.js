@@ -8,15 +8,48 @@ import 'slick-carousel/slick/slick-theme.css';
 import motion from 'framer-motion';
 import Layout from "../src/components/Layout/Layout.jsx";
 import Header from "../src/components/Header/Header.jsx";
-import { Fragment } from "react";
+// import { Fragment } from "react";
+import Router from "next/router";
+import { useState } from "react";
+import Loader from "../src/components/Loader/Loader.jsx";
+
 
 function MyApp({ Component, pageProps }) {
-  return <Fragment>
-          {/* <Header/> */}
-          <Layout>
-            <Component {...pageProps} />
-        </Layout>
-        </Fragment>
+
+  const [loader, setLoader] = useState(false);
+
+  Router.events.on('routeChangeStart', (url) => {
+    console.log(`Router is changing...`);
+      setLoader(true);
+  });
+
+  Router.events.on('routeChangeComplete', (url) => {
+    console.log(`Router is complete...`);
+    setLoader(false);
+  });
+  
+
+  return (
+      <>
+
+        { loader ? 
+        
+            <Loader/>  
+            : 
+           <div>
+             {/* <Header/> */}
+              <Layout>
+                <Component {...pageProps} />
+            </Layout>
+    
+           </div>
+
+        }
+
+      </>
+
+      
+      )
   
 }
 

@@ -15,7 +15,7 @@ function Header() {
    return (
     <header className="">
         <TopNav/>
-        <section className={`${styles.navbar_bg} bg-cover bg-no-repeat bg-center h-[40rem] z-20 relative`}>
+        <section className={`${styles.navbar_bg} bg-cover bg-no-repeat bg-center h-[35rem] lg:h-[40rem] z-[60] relative`}>
             <Navbar styleName="nav_menu"/>
             <Hero/>
         </section>

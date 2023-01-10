@@ -1,0 +1,4 @@
+.gallery_gradient {
+    background: rgb(0,0,0);
+    background: linear-gradient(-180deg, rgba(255,209,0,0.7883928571428571) 16%, rgba(0,0,0.9556197478991597) 60%);
+}

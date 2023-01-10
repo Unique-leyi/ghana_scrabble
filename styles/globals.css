@@ -30,7 +30,8 @@ a {
 }
 
 .inner_menu a {
-  @apply hover:text-siteyellow hover:border-b-2 hover:border-solid hover:border-siteyellow hover:pb-2 text-black active:text-siteyellow active:border-b-2 active:border-solid active:border-siteyellow active:pb-2;
+  @apply hover:text-siteyellow hover:border-b-2 hover:border-solid hover:border-siteyellow hover:pb-2
+   text-white  lg:text-black active:text-siteyellow active:border-b-2 active:border-solid active:border-siteyellow active:pb-2;
 }
 
 
@@ -46,5 +47,50 @@ a {
 /* about */
 .page-btn a, .news_cta a {
   @apply bg-black hover:bg-siteyellow py-4 px-6 rounded-md text-center text-white hover:text-black font-semibold;
+}
+
+/* resources*/
+.resource_btn a{
+  @apply font-semibold;
+}
+
+/* gallery */
+.gallery_btn {
+  @apply bg-black font-semibold mx-0 lg:mx-auto text-white rounded-md py-2 px-5 hover:text-siteyellow block w-64 lg:w-96;
+}
+
+/* footer */
+.quick a {
+  @apply text-white my-3 font-medium hover:text-siteyellow;
+}
+
+/* slider */
+/* the slides */
+.slick-slider .slick-track {
+  @apply lg:flex justify-around items-center lg:space-x-4;
+}
+
+.slick-prev:before, .slick-next:before {
+  @apply lg:!text-3xl !text-black;
+}
+
+.slick-prev {
+    @apply lg:!-left-9;
+}
+
+
+.animate_res {
+  animation: animate_res 0.5s ease-in-out;
+}
+
+@keyframes animate_res {
+  0% {
+    width: 30%;
+  }
+
+  100% {
+    width: 60%
+  }
+
 }
 
